@@ -1,0 +1,46 @@
+{
+  "conversas": 2500,
+  "mensagens": 26470,
+  "desfechos": {
+    "ganho": 712,
+    "perdido": 538,
+    "sem_resposta": 493,
+    "em_negociacao": 757
+  },
+  "precos_reais_possiveis": 72,
+  "faixa_de_preco_real": [
+    119.9,
+    1025.14
+  ],
+  "cotacoes_humanas": 2500,
+  "precos_distintos_citados": [
+    129.9,
+    159.9,
+    189.9,
+    219.9,
+    259.9,
+    299.9,
+    349.9,
+    389.9
+  ],
+  "cotacoes_fora_da_tabela": 2500,
+  "mensagens_que_citam_carencia": 0,
+  "mensagens_que_citam_pro_rata": 0,
+  "recusaveis_por_idade": 280,
+  "recusaveis_por_veiculo": 531,
+  "cotadas_mesmo_sendo_recusaveis": 751,
+  "conversas_com_dado_pessoal": {
+    "telefone": 1379,
+    "e-mail": 1379,
+    "CPF": 2500,
+    "CEP": 2500,
+    "placa": 839
+  },
+  "campos_que_a_api_pede": [
+    "plano_id",
+    "idade",
+    "veiculo_ano",
+    "cep",
+    "data_inicio"
+  ]
+}

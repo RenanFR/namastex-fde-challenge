@@ -1,0 +1,12 @@
+{
+  "_comentario": "Turnos fixos para rodar o agente de ponta a ponta sem chave de API. O modelo real decide isto sozinho; aqui os turnos estão congelados para o fluxo ficar reproduzível.",
+  "turnos": [
+    { "texto": "Claro, te ajudo agora. Pra cotar eu preciso de tres coisas: sua idade, o ano do carro e o CEP onde ele dorme. Pode mandar?" },
+    { "chamadas": [ { "nome": "registrar_dados_do_lead", "argumentos": { "idade": 34, "veiculo_ano": 2021, "cep": "01310-100" } } ] },
+    { "chamadas": [ { "nome": "consultar_planos", "argumentos": {} } ] },
+    { "texto": "Anotado. Sao tres opcoes: Essencial, que cobre colisao, roubo e furto; Completo, que soma terceiros e vidros; e Premium, que ainda traz carro reserva e assistencia 24h. Qual faz mais sentido pra voce, e a partir de quando quer a cobertura valendo?" },
+    { "chamadas": [ { "nome": "registrar_dados_do_lead", "argumentos": { "plano_id": "completo", "data_inicio": "2026-10-17" } } ] },
+    { "chamadas": [ { "nome": "cotar_plano", "argumentos": {} } ] },
+    { "texto": "Saiu a sua cotacao do plano Completo. Fica em R$ 209,90 por mes, com franquia de R$ 3.000, cobrindo colisao, roubo, furto, terceiros e vidros. Dois pontos importantes: roubo e furto so passam a valer 30 dias depois do inicio da vigencia, e como voce comeca dia 17 o primeiro pagamento e proporcional, R$ 101,56 pelos 15 dias que faltam em outubro. De novembro em diante volta pro valor cheio. Quer que eu siga com a emissao?" }
+  ]
+}

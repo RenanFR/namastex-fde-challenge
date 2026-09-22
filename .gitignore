@@ -9,8 +9,13 @@ venv/
 # env / secrets (NUNCA commitar)
 .env
 .env.*
+!.env.exemplo
 *.key
 *.pem
+
+.pytest_cache/
+
+.env.local
 
 # OS / editores
 .DS_Store
@@ -20,3 +25,6 @@ venv/
 
 # ...mas os logs de IA são entregável — ver README (Transparência de uso de IA)
 !ai-logs/**
+
+# trilha solta de execucao interativa (as gravadas ficam versionadas)
+execucoes/trilha.jsonl

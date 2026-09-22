@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoseguro-agente"
+version = "1.0.0"
+description = "Agente de cotação de seguro de veículo para o desafio FDE da Namastex"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27",
+    "anthropic>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pyarrow>=16.0",
+]
+
+[project.scripts]
+autoseguro = "autoseguro.cli:main"
+
+[tool.setuptools]
+packages = ["autoseguro"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.uv]
+package = false
