@@ -8,7 +8,7 @@ escrevendo código e rodando verificação.
 
 ## Por que este log é curado e não o `.jsonl` cru
 
-O `README.md` do desafio pede para copiar as sessões de `~/.claude/projects/<slug>/*.jsonl`.
+O enunciado do desafio pede para copiar as sessões de `~/.claude/projects/<slug>/*.jsonl`.
 No meu caso essa pasta tem **530 MB e 61 sessões** do produto que eu mantenho hoje: conversas
 de negócio, dados de clientes, caminhos de credencial em cloud e contexto pessoal. O arquivo
 desta sessão especificamente tem 2 MB e carrega, além do desafio, o índice de memória do meu
